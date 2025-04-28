@@ -1,0 +1,28 @@
+logging:
+  level:
+    org.springframework.mail: DEBUG
+
+spring:
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: anilreddy34@gmail.com
+    password:
+    properties:
+      mail:
+        smtp:
+          auth: false
+          connectiontimeout: 5000
+          timeout: 5000
+          writetimeout: 5000
+          starttls:
+            enable: true
+          # For SSL, if needed later
+          # socketFactory:
+          #   port: 465
+          #   class: javax.net.ssl.SSLSocketFactory
+
+toEmailAddress: anilreddy34@gmail.com
+subject: Email Notification from SpringBootEmailSchedulerApplication
+emailText: "<h1>Check attachment for image!</h1>"
+attachmentName: my_photo.png
